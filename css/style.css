@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 .wrapper {
-  max-width: 1200px;
+  width: 62.5vw;
   background-color: rgba(192, 219, 217, 1);
   margin-left: 360px;
   margin-right: 360px;
@@ -104,7 +104,7 @@
 /* Зеленые блоки без какого-либо адаптива, отрисованные относительно родителя (размеры соблюдаются) */
 
 .green__container {
-  height: 411px;
+  min-height: 411px;
   background-color: rgba(179, 249, 90, 1);
   display: flex;
   flex-direction: row;
@@ -126,28 +126,33 @@
 
 .green__block:nth-child(1) {
   width: 390px;
+  height: 198px;
   margin-right: 15px;
   margin-bottom: 15px;
 }
 
 .green__block:nth-child(2) {
   width: 590px;
+  height: 198px;
   margin-right: 15px;
   margin-bottom: 15px;
 }
 
 .green__block:nth-child(3) {
   width: 160px;
+  height: 198px;
   margin-bottom: 15px;
 }
 
 .green__block:nth-child(4) {
   width: 995px;
+  height: 198px;
   margin-right: 15px;
 }
 
 .green__block:nth-child(5) {
   width: 160px;
+  height: 198px;
 }
 
 /* Синие блоки с относительными размерами для адаптивности */
@@ -161,7 +166,7 @@
 
 .blue__block {
   width: 73.71vw;
-  max-height: 17.317vh;
+  max-height: 27.317vh;
   background-color: rgba(13, 137, 176, 1);
   margin-left: 30px;
   margin-top: 30px;
