@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+.wrapper {
+  max-width: 1200px;
+  background-color: rgba(192, 219, 217, 1);
+  margin-left: 360px;
+  margin-right: 360px;
+}
+
+.container {
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.header__container {
+  height: 100px;
+  background-color: rgba(127, 175, 246, 1);
+}
+
+/* Наша ссылка (как бы кнопка) */
+
+.button {
+  text-decoration: none;
+  width: 230px;
+  height: 39px;
+  position: absolute;
+  margin-left: 30px;
+  margin-top: 30px;
+  background: #A5C7F9;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Roboto';
+  font-size: 20px;
+  line-height: 23px;
+  color: #FFFFFF;
+}
+
+/* Окошко попапа + Небольшая анимация для привлечения внимания */
+
+.popup {
+  position: fixed;
+  width: 400px;
+  height: 400px;
+  background-color: #FFFFFF;
+  top: 100px;
+  right: 500px;
+  opacity: 0;
+  visibility: hidden;
+  transform: translate(0px, -100%);
+  transition: transform 0.8s, opacity 0.8s;
+}
+
+.popup:target {
+  opacity: 1;
+  visibility: visible;
+  transform: translate(0px, 0%);
+}
+
+
+.popup__body {
+  min-height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.popup__close-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 15px;
+  position: absolute;
+  width: 43px;
+  height: 39px;
+  right: 15px;
+  top: 15px;
+  background: #7FAFF6;
+  border-radius: 5px;
+}
+
+.popup__close {
+  text-decoration: none;
+  position: absolute;
+  font-family: 'Roboto', sans-serif;
+  font-size: 30px;
+  line-height: 23px;
+  color: white;
+}
+
+.popup__title {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 53px;
+  line-height: 62px;
+  color: #000000;
+}
+
+/* Зеленые блоки без какого-либо адаптива, отрисованные относительно родителя (размеры соблюдаются) */
+
+.green__container {
+  height: 411px;
+  background-color: rgba(179, 249, 90, 1);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.green__block {
+  background-color: rgba(138, 209, 145, 1);
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 53px;
+  line-height: 62px;
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.green__block:nth-child(1) {
+  width: 390px;
+  margin-right: 15px;
+  margin-bottom: 15px;
+}
+
+.green__block:nth-child(2) {
+  width: 590px;
+  margin-right: 15px;
+  margin-bottom: 15px;
+}
+
+.green__block:nth-child(3) {
+  width: 160px;
+  margin-bottom: 15px;
+}
+
+.green__block:nth-child(4) {
+  width: 995px;
+  margin-right: 15px;
+}
+
+.green__block:nth-child(5) {
+  width: 160px;
+}
+
+/* Синие блоки с относительными размерами для адаптивности */
+
+.blue__container {
+  height: 259px;
+  background-color: rgba(136, 181, 191, 1);
+  display: flex;
+  margin-bottom: 100px;
+}
+
+.blue__block {
+  width: 73.71vw;
+  max-height: 17.317vh;
+  background-color: rgba(13, 137, 176, 1);
+  margin-left: 30px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.blue__block:nth-last-child(1) {
+  margin-right: 30px;
+}
+
+
+.footer__container {
+  height: 100px;
+  background-color: rgba(127, 175, 246, 1);
+}
